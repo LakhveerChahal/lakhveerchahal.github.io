@@ -1,0 +1,19 @@
+<div class="heart-container" #heartCell>
+  @for (i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; track i) {
+    <div class="heart-line sj-display-flex">
+      @for (j of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; track j) {
+        <div class="heart-circle"
+          [ngClass]="{
+            'hidden': ((i === 0 || i === 9) && (j === 0 || j === 1 || j === 11 || j === 12)) ||
+                      (i === 0 && (j === 5 || j === 6 || j === 7)) ||
+                      (i === 1 && j === 6) ||
+                      ((i === 1 || i === 8) && (j === 0 || j === 12)) ||
+                      ((i === 10 || i === 11 || i === 12) && (j === 0 || j === 1 || j === 2 || j === 10 || j === 11 || j === 12)) ||
+                      (i === 11 && (j === 3 || j === 4 || j === 8 || j === 9)) ||
+                      (i === 12)
+                      }"
+          #heartCircle></div>
+      }
+    </div>
+  }
+</div>

@@ -1,0 +1,23 @@
+.heart-container {
+  transition: scale 0.3s ease-in-out;
+
+  .heart-line {
+
+    .heart-circle {
+      height: 1rem;
+      width: 1rem;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      margin: 0.2rem;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+  }
+}
+
+.heart-container:hover {
+  scale: 1.1;
+  cursor: pointer;
+}

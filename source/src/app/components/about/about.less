@@ -1,0 +1,25 @@
+.about-container {
+  color: var(--text-color);
+  background: radial-gradient(at 150% 100%, var(--primary-color) 10px, var(--background-color) 50%);
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  padding: 6rem 0;
+  gap: 2rem;
+
+  .about-left {
+    .about-image {
+      border-radius: 50%;
+      width: 30rem;
+      box-shadow: 0 0 10px 2px var(--primary-color);
+    }
+  }
+
+  .about-right {
+    color: var(--faded-color);
+    font-size: 1.5rem;
+
+    .about-title {
+      font-size: 3rem;
+    }
+  }
+}

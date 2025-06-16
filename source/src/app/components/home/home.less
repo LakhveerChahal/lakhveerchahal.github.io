@@ -1,0 +1,38 @@
+.home-container {
+  color: var(--text-color);
+  height: 100vh;
+  justify-content: space-around;
+  background: radial-gradient(
+    at 75% 50%,
+    #d65f1a 10px, var(--background-color) 50%);
+
+  .home-left {
+
+    .home-title {
+      font-size: 6rem;
+    }
+    .home-subtitle {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: var(--faded-color);
+      padding-left: 1rem;
+      border-left: 3px solid var(--faded-color);
+    }
+
+  }
+
+  .home-right {
+    border-radius: 50%;
+    box-shadow: var(--primary-color) 0px 0px 10px 2px;
+    transition: scale 0.3s ease-in-out;
+    .home-image {
+      height: 65vh;
+    }
+  }
+
+  .home-right:hover {
+    scale: 1.01;
+  }
+
+
+}
