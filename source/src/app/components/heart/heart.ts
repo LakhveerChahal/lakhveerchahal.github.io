@@ -59,8 +59,4 @@ export class Heart implements AfterViewInit{
     });
 
   }
-
-  onHover(): void {
-    console.log('Heart hovered');
-  }
 }
