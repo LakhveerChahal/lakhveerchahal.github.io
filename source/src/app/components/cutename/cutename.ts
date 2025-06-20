@@ -23,11 +23,10 @@ export class Cutename implements AfterViewInit {
   animatePath(path: ElementRef): void {
     animate([svg.createDrawable(path.nativeElement)], {
       draw: ['0 0', '0 1', '1 1'],
-      ease: 'inOutQuad',
-      duration: 1000,
+      ease: 'inQuint',
+      duration: 5000,
       delay: stagger(100),
       loop: true,
-      alternate: true,
     });
   }
 }
