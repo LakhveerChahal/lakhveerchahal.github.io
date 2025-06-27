@@ -1,10 +1,14 @@
 <section class="footer">
   <section class="footer-content">
     <h2 class="name gradient-text">Stuti Juneja</h2>
+    <button matMiniFab (click)="toggleResting()" class="cat-home-button">
+      @if (catResting) {
+        <mat-icon>home</mat-icon>
+      } @else {
+        <mat-icon>pets</mat-icon>
+      }
+    </button>
 
-    <div class="cat-container" #catContainer>
-      <img src="cat.gif" alt="Cat gif" class="footer-cat" #cat>
-    </div>
     <hr class="horizontal">
 
     <p class="rights">
