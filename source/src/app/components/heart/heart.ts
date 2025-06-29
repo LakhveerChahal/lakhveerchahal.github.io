@@ -48,8 +48,8 @@ export class Heart implements AfterViewInit{
         { to: 0.1 }
       ],
       boxShadow: [
-        { to: '0 0 1rem 0 currentColor' },
-        { to: '0 0 0rem 0 currentColor' }
+        { to: '0 0 1rem 0 magenta' },
+        { to: '0 0 0rem 0 magenta' }
       ],
       delay: stagger(heartBeat, {
         grid: [13, 13],
