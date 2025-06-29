@@ -103,13 +103,22 @@
     }
 
     li:nth-child(1) {
-      background-image: radial-gradient(at 150% 0%, transparent 10px, rgba(0, 0, 0, 0.8) 50%), url('../../../../public/aiml.png');
+      background-image: radial-gradient(at 150% 0%, transparent 10px, var(--inverse-faded-color) 50%), url('../../../../public/aiml_light.jpg');
     }
     li:nth-child(2) {
-      background-image: radial-gradient(at 150% 0%, transparent 10px, rgba(0, 0, 0, 0.8) 50%), url('../../../../public/baking.png');
+      background-image: radial-gradient(at 150% 0%, transparent 10px, var(--inverse-faded-color) 50%), url('../../../../public/baking.png');
     }
     li:nth-child(3) {
-      background-image: radial-gradient(at 150% 0%, transparent 10px, rgba(0, 0, 0, 0.8) 50%), url('../../../../public/sketching.jpg');
+      background-image: radial-gradient(at 150% 0%, transparent 10px, var(--inverse-faded-color) 50%), url('../../../../public/sketching.jpg');
+    }
+    &.dark li:nth-child(1) {
+      background-image: radial-gradient(at 150% 0%, transparent 10px, var(--inverse-faded-color) 50%), url('../../../../public/aiml.png');
+    }
+    li:nth-child(2) {
+      background-image: radial-gradient(at 150% 0%, transparent 10px, var(--inverse-faded-color) 50%), url('../../../../public/baking.png');
+    }
+    li:nth-child(3) {
+      background-image: radial-gradient(at 150% 0%, transparent 10px, var(--inverse-faded-color) 50%), url('../../../../public/sketching.jpg');
     }
   }
 }

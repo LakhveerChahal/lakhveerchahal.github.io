@@ -27,7 +27,11 @@
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 3rem 0;
-    background-image: radial-gradient(at 150% 100%, var(--primary-color) 10px, rgba(0, 0, 0, 0.8) 50%), url('../../../../public/aboutme.jpg');
+    background-image: radial-gradient(at 150% 100%, var(--primary-color) 10px, var(--inverse-faded-color) 50%), url('../../../../public/aboutme_white.png');
+
+    &.dark {
+      background-image: radial-gradient(at 150% 100%, var(--primary-color) 10px, var(--inverse-faded-color) 50%), url('../../../../public/aboutme.jpg');
+    }
 
     .about-me {
       width: 90%;

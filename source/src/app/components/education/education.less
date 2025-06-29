@@ -39,7 +39,12 @@
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 3rem 0;
-    background-image: radial-gradient(at -25% 0%, var(--primary-color) 10px, rgba(0, 0, 0, 0.8) 50%), url('../../../../public/education.jpg');
+    background-image: radial-gradient(at -25% 0%, var(--primary-color) 10px, var(--inverse-faded-color) 50%), url('../../../../public/education_light.jpg');
+    background-repeat: round;
+
+    &.dark {
+      background-image: radial-gradient(at -25% 0%, var(--primary-color) 10px, var(--inverse-faded-color) 50%), url('../../../../public/education.jpg');
+    }
 
     .education-main {
       width: 90%;
