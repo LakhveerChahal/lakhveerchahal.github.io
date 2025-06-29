@@ -13,8 +13,7 @@
 
     .follow-title {
       font-size: 6rem;
-      display: flex;
-      align-items: center;
+      vertical-align: middle;
     }
 
     .follow-list {
@@ -39,6 +38,31 @@
     .follow-right {
       width: fit-content;
       display: block;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: 4rem 0;
+
+    .follow-inner {
+      width: 90%;
+      grid-template-columns: 1fr;
+      text-align: center;
+      justify-items: center;
+
+      .follow-title {
+        font-size: 3rem;
+      }
+
+      .follow-list {
+        flex-direction: row;
+        align-items: center;
+
+        .follow-item img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,44 @@
+.nav-bar {
+  background: var(--background-color);
+  padding: 1rem;
+  flex-direction: column;
+
+  .nav-title {
+    font-size: 2em;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .nav-link {
+      color: var(--faded-color);
+      transition: color 0.2s ease-in-out, scale 0.2s ease-in-out;
+    }
+
+    .nav-link:hover {
+      scale: 1.1;
+      color: var(--text-color);
+    }
+
+    .active {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .nav-theme-icon {
+    color: var(--faded-color);
+
+    .active {
+      color: var(--text-color);
+    }
+  }
+}

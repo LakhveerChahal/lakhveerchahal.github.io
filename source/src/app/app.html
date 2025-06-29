@@ -1,25 +1,33 @@
-<main #catContainer>
-  <img src="cat.gif" alt="Cat gif" class="footer-cat" #cat>
-  <sj-header></sj-header>
-  <sj-home></sj-home>
+<img src="cat.gif" alt="Cat gif" class="footer-cat" #cat>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side">
+    <sj-sidenav (toggleSideNavEvent)="sidenav.toggle()"></sj-sidenav>
+  </mat-sidenav>
 
-  <hr class="horizontal-line">
+  <mat-sidenav-content>
+    <main #catContainer>
+      <sj-header (toggleSideNavEvent)="sidenav.toggle()"></sj-header>
+      <sj-home></sj-home>
 
-  <sj-about></sj-about>
+      <hr class="horizontal-line">
 
-  <hr class="horizontal-line">
+      <sj-about></sj-about>
 
-  <sj-education></sj-education>
+      <hr class="horizontal-line">
 
-  <hr class="horizontal-line">
+      <sj-education></sj-education>
 
-  <sj-skills></sj-skills>
+      <hr class="horizontal-line">
 
-  <hr class="horizontal-line">
+      <sj-skills></sj-skills>
 
-  <sj-follow></sj-follow>
+      <hr class="horizontal-line">
 
-  <section #footerContainer>
-    <sj-footer (catRestingEvent)="toggleResting()"></sj-footer>
-  </section>
-</main>
+      <sj-follow></sj-follow>
+
+      <section #footerContainer>
+        <sj-footer (catRestingEvent)="toggleResting()"></sj-footer>
+      </section>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

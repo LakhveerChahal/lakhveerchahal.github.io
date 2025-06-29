@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, viewChild } from '@angular/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { createAnimatable, utils } from 'animejs';
 import { Subscription } from 'rxjs';
 import { About } from './components/about/about';
@@ -7,6 +8,7 @@ import { Follow } from './components/follow/follow';
 import { Footer } from './components/footer/footer';
 import { Header } from './components/header/header.component';
 import { Home } from './components/home/home';
+import { Sidenav } from './components/sidenav/sidenav';
 import { Skills } from './components/skills/skills';
 import { ThemeService } from './services/theme.service';
 
@@ -14,12 +16,14 @@ import { ThemeService } from './services/theme.service';
   selector: 'sj-root',
   imports: [
     Header,
+    Sidenav,
     Home,
     About,
     Education,
     Skills,
     Follow,
-    Footer
+    Footer,
+    MatSidenavModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.less'

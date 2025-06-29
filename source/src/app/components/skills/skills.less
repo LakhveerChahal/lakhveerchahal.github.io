@@ -82,5 +82,35 @@
     }
   }
 
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 3rem 0;
+
+    .skills-heading-size {
+      font-size: 2.5rem;
+      padding: 0 1rem;
+    }
+
+    .skills-image {
+      display: none;
+    }
+
+    .skills-item {
+      padding: 2rem 1rem;
+      background-repeat: round;
+    }
+
+    li:nth-child(1) {
+      background-image: radial-gradient(at 150% 0%, transparent 10px, rgba(0, 0, 0, 0.8) 50%), url('../../../../public/aiml.png');
+    }
+    li:nth-child(2) {
+      background-image: radial-gradient(at 150% 0%, transparent 10px, rgba(0, 0, 0, 0.8) 50%), url('../../../../public/baking.png');
+    }
+    li:nth-child(3) {
+      background-image: radial-gradient(at 150% 0%, transparent 10px, rgba(0, 0, 0, 0.8) 50%), url('../../../../public/sketching.jpg');
+    }
+  }
 }
 

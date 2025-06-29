@@ -1,0 +1,11 @@
+<section>
+    <nav class="nav-bar sj-display-flex">
+      <section class="nav-links sj-items-center">
+        <a [routerLink]="[]" class="nav-link" alt="Home" routerLinkActive="active" (click)="emitToggleSideNav()" [routerLinkActiveOptions]="linkActiveOptions">Home</a>
+        <a [routerLink]="[]" fragment="about" class="nav-link" alt="About" routerLinkActive="active" (click)="emitToggleSideNav()" [routerLinkActiveOptions]="linkActiveOptions">About</a>
+        <a [routerLink]="[]" fragment="education" class="nav-link" alt="Education" routerLinkActive="active" (click)="emitToggleSideNav()" [routerLinkActiveOptions]="linkActiveOptions">Education</a>
+        <a [routerLink]="[]" fragment="skills" class="nav-link" alt="Skills" routerLinkActive="active" (click)="emitToggleSideNav()" [routerLinkActiveOptions]="linkActiveOptions">Skills</a>
+        <a [routerLink]="[]" fragment="contact" class="nav-link" alt="Contact" routerLinkActive="active" (click)="emitToggleSideNav()" [routerLinkActiveOptions]="linkActiveOptions">Contact</a>
+      </section>
+    </nav>
+</section>
