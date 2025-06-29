@@ -3,8 +3,8 @@
   height: 100vh;
   justify-content: space-around;
   background: radial-gradient(
-    at 75% 50%,
-    #d65f1a 10px, var(--background-color) 50%);
+  at 75% 50%,
+  var(--primary-color) 10px, var(--background-color) 50%);
 
   .home-left {
 
@@ -22,7 +22,7 @@
   }
 
   .home-right {
-    border-radius: 50%;
+    border-radius: 50rem;
     box-shadow: var(--primary-color) 0px 0px 10px 2px;
     transition: scale 0.3s ease-in-out;
     .home-image {
@@ -37,6 +37,10 @@
   @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column-reverse;
+    background: radial-gradient(
+    circle
+    at 50% 27%,
+    var(--primary-color) 10px, var(--background-color) 35%);
 
     padding: 2rem;
     .home-right {

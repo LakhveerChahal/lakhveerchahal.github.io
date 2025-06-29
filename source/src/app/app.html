@@ -7,26 +7,28 @@
   <mat-sidenav-content>
     <main #catContainer>
       <sj-header (toggleSideNavEvent)="sidenav.toggle()"></sj-header>
-      <sj-home></sj-home>
+      <section (click)="sidenav.close()">
+        <sj-home></sj-home>
 
-      <hr class="horizontal-line">
+        <hr class="horizontal-line">
 
-      <sj-about></sj-about>
+        <sj-about></sj-about>
 
-      <hr class="horizontal-line">
+        <hr class="horizontal-line">
 
-      <sj-education></sj-education>
+        <sj-education></sj-education>
 
-      <hr class="horizontal-line">
+        <hr class="horizontal-line">
 
-      <sj-skills></sj-skills>
+        <sj-skills></sj-skills>
 
-      <hr class="horizontal-line">
+        <hr class="horizontal-line">
 
-      <sj-follow></sj-follow>
+        <sj-follow></sj-follow>
 
-      <section #footerContainer>
-        <sj-footer (catRestingEvent)="toggleResting()"></sj-footer>
+        <section #footerContainer>
+          <sj-footer (catRestingEvent)="toggleResting()"></sj-footer>
+        </section>
       </section>
     </main>
   </mat-sidenav-content>

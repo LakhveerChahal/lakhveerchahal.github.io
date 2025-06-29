@@ -1,4 +1,4 @@
-<section>
+<section class="sidenav-container">
     <nav class="nav-bar sj-display-flex">
       <section class="nav-links sj-items-center">
         <a [routerLink]="[]" class="nav-link" alt="Home" routerLinkActive="active" (click)="emitToggleSideNav()" [routerLinkActiveOptions]="linkActiveOptions">Home</a>
@@ -8,4 +8,15 @@
         <a [routerLink]="[]" fragment="contact" class="nav-link" alt="Contact" routerLinkActive="active" (click)="emitToggleSideNav()" [routerLinkActiveOptions]="linkActiveOptions">Contact</a>
       </section>
     </nav>
+
+    <section class="theme-container">
+      <span class="material-symbols-outlined nav-theme-icon" [ngClass]="{'active': !isDarkMode}">
+        light_mode
+      </span>
+
+      <mat-slide-toggle (change)="toggleTheme()" [checked]="isDarkMode"></mat-slide-toggle>
+
+      <span class="material-symbols-outlined nav-theme-icon" [ngClass]="{'active': isDarkMode}">
+        dark_mode
+      </span>
 </section>

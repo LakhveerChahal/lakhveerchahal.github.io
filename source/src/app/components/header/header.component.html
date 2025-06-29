@@ -1,36 +1,42 @@
-<section class="mobile mobile-nav-bar">
-<mat-toolbar>
-  <section>
-    <button matIconButton (click)="toggleSideNav()" aria-label="Menu">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </section>
+<section class="mobile m-nav-bar">
+  <mat-toolbar>
+    <section class="m-nav-bar-container sj-display-flex">
+      <button matIconButton class="side-nav-btn" (click)="toggleSideNav()" aria-label="Menu">
+        <mat-icon>menu</mat-icon>
+      </button>
 
-</mat-toolbar>
-</section>
-  <section class="desktop">
-    <nav class="nav-bar sj-display-flex">
-      <sj-cutename></sj-cutename>
-
-      <section class="nav-right-links sj-items-center">
-        <a [routerLink]="[]" class="nav-link" alt="Home" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">Home</a>
-        <a [routerLink]="[]" fragment="about" class="nav-link" alt="About" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">About</a>
-        <a [routerLink]="[]" fragment="education" class="nav-link" alt="Education" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">Education</a>
-        <a [routerLink]="[]" fragment="skills" class="nav-link" alt="Skills" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">Skills</a>
-        <a [routerLink]="[]" fragment="contact" class="nav-link" alt="Contact" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">Contact</a>
-
-        <div class="theme-container">
-          <span class="material-symbols-outlined nav-theme-icon" [ngClass]="{'active': !isDarkMode}">
-            light_mode
-          </span>
-
-          <mat-slide-toggle (change)="toggleTheme()" [checked]="isDarkMode"></mat-slide-toggle>
-
-          <span class="material-symbols-outlined nav-theme-icon" [ngClass]="{'active': isDarkMode}">
-            dark_mode
-          </span>
+      <div class="m-nav-bar-title-outer">
+        <div class="m-nav-bar-title">
+          <sj-cutename></sj-cutename>
         </div>
+      </div>
+    </section>
 
-      </section>
-    </nav>
-  </section>
+  </mat-toolbar>
+</section>
+<section class="desktop">
+  <nav class="nav-bar sj-display-flex">
+    <sj-cutename></sj-cutename>
+
+    <section class="nav-right-links sj-items-center">
+      <a [routerLink]="[]" class="nav-link" alt="Home" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">Home</a>
+      <a [routerLink]="[]" fragment="about" class="nav-link" alt="About" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">About</a>
+      <a [routerLink]="[]" fragment="education" class="nav-link" alt="Education" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">Education</a>
+      <a [routerLink]="[]" fragment="skills" class="nav-link" alt="Skills" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">Skills</a>
+      <a [routerLink]="[]" fragment="contact" class="nav-link" alt="Contact" routerLinkActive="active" [routerLinkActiveOptions]="linkActiveOptions">Contact</a>
+
+      <div class="theme-container">
+        <span class="material-symbols-outlined nav-theme-icon" [ngClass]="{'active': !isDarkMode}">
+          light_mode
+        </span>
+
+        <mat-slide-toggle (change)="toggleTheme()" [checked]="isDarkMode"></mat-slide-toggle>
+
+        <span class="material-symbols-outlined nav-theme-icon" [ngClass]="{'active': isDarkMode}">
+          dark_mode
+        </span>
+      </div>
+
+    </section>
+  </nav>
+</section>
